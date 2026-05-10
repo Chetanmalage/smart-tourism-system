@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tourism System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>🌍 Smart Tourism</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#assistant">AI Assistant</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#emergency">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="overlay">
+            <h2>Explore The World Smartly</h2>
+            <p>AI-Assisted Smart Tourism Guidance System</p>
+
+            <button onclick="explorePlaces()">
+                Explore Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Tourist Places -->
+    <section class="places" id="places">
+
+        <h2>Popular Tourist Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="">
+                <h3>Taj Mahal</h3>
+                <p>Agra, India</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86" alt="">
+                <h3>Goa Beach</h3>
+                <p>Goa, India</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+                <h3>Mahabaleshwar</h3>
+                <p>Maharashtra, India</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Google Maps Section -->
+
+    <section class="map-section" id="map">
+
+        <h2>Explore Location on Map</h2>
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.208802315734!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8b8b8b8b8b%3A0x123456789!2sPune!5e0!3m2!1sen!2sin!4v1710000000000"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI Chatbot Section -->
+
+    <section class="chatbot-section" id="assistant">
+
+        <h2>AI Travel Assistant</h2>
+
+        <p class="chat-subtitle">
+            Ask smart travel questions and get AI-powered tourism guidance
+        </p>
+
+        <div class="chat-container">
+
+            <div class="input-area">
+
+                <input type="text" id="userInput" placeholder="Ask about beaches, mountains, safe places...">
+
+                <button onclick="chatbotReply()">
+                    Ask AI
+                </button>
+
+            </div>
+
+            <div class="chat-output" id="chatOutput">
+
+                <div class="bot-message">
+                    👋 Hello! I am your AI Travel Assistant.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Emergency Section -->
+    <section class="emergency" id="emergency">
+        <h2>Emergency Support</h2>
+
+        <div class="emergency-box">
+            <p>Police: 100</p>
+            <p>Ambulance: 108</p>
+            <p>Tourist Helpline: 1363</p>
+
+            <button onclick="shareLocation()">
+                Share Location
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Smart Tourism Guidance System</h3>
+
+        <p>
+            AI-Assisted Tourism Navigation and Safety Platform
+        </p>
+
+        <p>
+            © 2026 MCA Technical Seminar Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

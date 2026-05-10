@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0d1b2a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h2 {
+    font-size: clamp(35px, 6vw, 60px);
+    margin-bottom: 10px;
+}
+
+.overlay button {
+    padding: 12px 25px;
+    border: none;
+    background: #ffb703;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.overlay button:hover {
+    background: white;
+    color: black;
+}
+
+.places {
+    padding: 60px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    padding-bottom: 20px;
+}
+
+.emergency {
+    padding: 60px;
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+}
+
+.emergency-box {
+    margin-top: 30px;
+}
+
+.emergency button {
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.emergency button:hover {
+    background: white;
+    color: red;
+}
+
+nav ul li a:hover {
+    color: #ffb703;
+    transition: 0.3s;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.map-section {
+    padding: 60px;
+    text-align: center;
+    background: white;
+}
+
+.map-section h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-section {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f8fbff, #eef5ff);
+    text-align: center;
+}
+
+.chatbot-section h2 {
+    font-size: 45px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.chat-subtitle {
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.chat-container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-area input {
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-area input:focus {
+    border: 1px solid #0d1b2a;
+}
+
+.input-area button {
+    padding: 15px 25px;
+    border: none;
+    background: #0d1b2a;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    background: #ffb703;
+    color: black;
+}
+
+.chat-output {
+    margin-top: 35px;
+    background: #f4f7fb;
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 120px;
+    text-align: left;
+    overflow: auto;
+}
+
+.bot-message {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+}
+
+footer {
+    background: #08111f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+section {
+    animation: fadeIn 1.2s ease;
+}
+
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay {
+        width: 90%;
+    }
+
+    .input-area input {
+        width: 100%;
+    }
+
+    .chat-container {
+        padding: 25px;
+    }
+
+    .result-box {
+        width: 100%;
+    }
+}
