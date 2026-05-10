@@ -168,3 +168,20 @@ document.getElementById("userInput")
         }
 
     });
+
+
+function toggleChat() {
+
+    const chatBox =
+        document.getElementById("floatingChat");
+
+    if (chatBox.style.display === "flex") {
+
+        chatBox.style.display = "none";
+    }
+
+    else {
+
+        chatBox.style.display = "flex";
+    }
+}

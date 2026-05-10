@@ -17,7 +17,11 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#places">Places</a></li>
-            <li><a href="#assistant">AI Assistant</a></li>
+            <li>
+                <a href="#" onclick="toggleChat()">
+                    AI Assistant
+                </a>
+            </li>
             <li><a href="#map">Map</a></li>
             <li><a href="#emergency">Emergency</a></li>
         </ul>
@@ -82,39 +86,6 @@
     </section>
 
 
-    <!-- AI Chatbot Section -->
-
-    <section class="chatbot-section" id="assistant">
-
-        <h2>AI Travel Assistant</h2>
-
-        <p class="chat-subtitle">
-            Ask smart travel questions and get AI-powered tourism guidance
-        </p>
-
-        <div class="chat-container">
-
-            <div class="input-area">
-
-                <input type="text" id="userInput" placeholder="Ask about beaches, mountains, safe places...">
-
-                <button onclick="chatbotReply()">
-                    Ask AI
-                </button>
-
-            </div>
-
-            <div class="chat-output" id="chatOutput">
-
-                <div class="bot-message">
-                    👋 Hello! I am your AI Travel Assistant.
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
     <!-- Emergency Section -->
     <section class="emergency" id="emergency">
         <h2>Emergency Support</h2>
@@ -130,6 +101,44 @@
         </div>
 
     </section>
+
+
+    <!-- Floating AI Assistant -->
+
+    <div class="chat-toggle" onclick="toggleChat()">
+        💬
+    </div>
+
+    <div class="floating-chat" id="floatingChat">
+
+        <div class="chat-header">
+
+            <h3>AI Travel Assistant</h3>
+
+            <span onclick="toggleChat()">✖</span>
+
+        </div>
+
+        <div class="chat-body" id="chatOutput">
+
+            <div class="bot-message">
+                👋 Hello! Ask about beaches, adventure, safety or tourism guidance.
+            </div>
+
+        </div>
+
+        <div class="chat-input-area">
+
+            <input type="text" id="userInput" placeholder="Ask something...">
+
+            <button onclick="chatbotReply()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
 
     <!-- Footer -->
 
