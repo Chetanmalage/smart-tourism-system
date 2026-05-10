@@ -396,25 +396,43 @@ section {
 
 @media(max-width:768px) {
 
+    /* Mobile Navbar */
+
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
+        position: relative;
+    }
+
+    nav h1 {
+        font-size: 30px;
     }
 
     .menu-toggle {
         display: block;
         color: white;
+        font-size: 32px;
+        cursor: pointer;
     }
+
+    /* Hidden Menu */
 
     nav ul {
         display: none;
         flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
         width: 100%;
-        margin-top: 20px;
+        background: #0d1b2a;
+        padding: 20px 0;
         gap: 15px;
+        z-index: 999;
     }
+
+    /* Show Menu */
 
     nav ul.active {
         display: flex;
@@ -427,9 +445,10 @@ section {
 
     nav ul li a {
         display: block;
-        padding: 10px;
+        padding: 12px;
+        margin: 0 20px;
+        border-radius: 10px;
         background: rgba(255, 255, 255, 0.08);
-        border-radius: 8px;
     }
 
     .floating-chat {

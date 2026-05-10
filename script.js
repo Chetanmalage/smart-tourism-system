@@ -197,3 +197,18 @@ function toggleMenu() {
 
     navLinks.classList.toggle("active");
 }
+
+
+/* Auto Close Menu On Click */
+
+document.querySelectorAll("#navLinks a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document.getElementById("navLinks")
+                .classList.remove("active");
+
+        });
+
+    });
