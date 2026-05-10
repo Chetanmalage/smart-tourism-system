@@ -175,13 +175,16 @@ function toggleChat() {
     const chatBox =
         document.getElementById("floatingChat");
 
-    if (chatBox.style.display === "flex") {
+    if (
+        chatBox.style.display === "none" ||
+        chatBox.style.display === ""
+    ) {
 
-        chatBox.style.display = "none";
+        chatBox.style.display = "flex";
     }
 
     else {
 
-        chatBox.style.display = "flex";
+        chatBox.style.display = "none";
     }
 }
