@@ -291,42 +291,6 @@ section {
 }
 
 
-@media(max-width:768px) {
-
-    nav {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    nav ul {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .overlay {
-        width: 90%;
-    }
-
-    .input-area input {
-        width: 100%;
-    }
-
-    .chat-container {
-        padding: 25px;
-    }
-
-    .result-box {
-        width: 100%;
-    }
-}
-
-
 /* Floating Chat Button */
 
 .chat-toggle {
@@ -415,4 +379,101 @@ section {
 .chat-input-area button:hover {
     background: #ffb703;
     color: black;
+}
+
+
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav h1{
+        margin-bottom:15px;
+        font-size:28px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    nav ul li{
+        margin-left:0;
+    }
+
+    .hero{
+        height:80vh;
+        padding:20px;
+    }
+
+    .overlay{
+        width:100%;
+        padding:25px;
+    }
+
+    .overlay h2{
+        font-size:32px;
+    }
+
+    .overlay p{
+        font-size:16px;
+    }
+
+    .places,
+    .map-section,
+    .emergency{
+        padding:40px 20px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    .map-container iframe{
+        height:300px;
+    }
+
+    /* Floating Chat */
+
+    .floating-chat{
+        width:90%;
+        right:5%;
+        bottom:90px;
+    }
+
+    .chat-body{
+        height:250px;
+    }
+
+    .chat-input-area input{
+        font-size:14px;
+    }
+
+    .chat-input-area button{
+        padding:12px 15px;
+        font-size:14px;
+    }
+
+    .chat-toggle{
+        width:55px;
+        height:55px;
+        font-size:24px;
+        bottom:20px;
+        right:20px;
+    }
+
+    footer h3{
+        font-size:22px;
+    }
 }
