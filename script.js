@@ -188,3 +188,12 @@ function toggleChat() {
         chatBox.style.display = "none";
     }
 }
+
+
+function toggleMenu() {
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    navLinks.classList.toggle("active");
+}
